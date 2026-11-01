@@ -32,7 +32,7 @@
 
 ## Installation
 
-1. [**Download BlacksmithRelay-0.1.0-alpha.2.dmg**](https://github.com/arnaudlewis/blacksmith-relay/releases/download/v0.1.0-alpha.2/BlacksmithRelay-0.1.0-alpha.2.dmg) (or browse all versions on [**Releases**](../../releases)).
+1. Download the latest `.dmg` from [**Releases**](../../releases).
 2. Open the disk image and drag **Blacksmith Relay.app** to `/Applications`.
 3. Launch **Blacksmith Relay** (macOS 15+ on Apple Silicon `arm64`). The background relay service starts automatically on `http://127.0.0.1:57431/v1`.
 
