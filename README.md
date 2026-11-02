@@ -1,6 +1,6 @@
 # Blacksmith Relay
 
-**Blacksmith Relay** is a native macOS application and menu-bar daemon that connects local coding agents (**Codex**, **Claude Code**, **Droid**, **OpenCode**, **Cline**, **Pi**) to your AI provider subscriptions and API accounts (**OpenAI**, **Claude**, **Antigravity / Gemini**, **xAI / Grok**, **DeepSeek**) through a single unified local endpoint.
+**Blacksmith Relay** is a native macOS application and menu-bar daemon that connects local coding agents (**Codex**, **Claude Code**, **Pi**, and any OpenAI-compatible client such as **OpenRouter**-style tools) to your AI provider subscriptions and API accounts (**OpenAI**, **Claude**, **Antigravity / Gemini**, **xAI / Grok**, **DeepSeek**) through a single unified local endpoint.
 
 ---
 
@@ -44,10 +44,10 @@ Setting up Codex takes less than a minute—no manual TOML editing required:
 
 1. **Connect your provider accounts**
    Open the **Accounts** tab in Blacksmith Relay and add the accounts you want to use (OAuth sign-in or API key). You can optionally click **Models…** on any provider to toggle which models appear in your clients.
-2. **Create an application key & select Codex**
-   Open the **Applications** tab, click **Create Key**, name your application (e.g. `Codex`), and check the accounts it is allowed to use. Then click **Configure Client → codex**.
+2. **Create an application key & pick the Codex guide**
+   Open the **Applications** tab, click **Create Key**, name your application (e.g. `Codex`), choose **Harness configuration → Codex**, and check the accounts it is allowed to use. Click **Create & Open Setup Guide**. You can reopen the guide at any time with the **Setup Guide** button on the application's row.
 3. **Choose your default models & save the files**
-   In the export sheet:
+   In the Setup Guide, click **Export Configuration…**. In the export sheet:
    - Pick your **Primary model** (default primary model) and **Default subagent model** (default subagent model).
    - Select **New configuration** (or **Merge with existing config.toml** to merge into your existing `~/.codex/config.toml` without losing your personal settings, MCP servers, or project rules).
    - Click **Save…** and save both exported files (`config.toml` and `blacksmith-models.json`) into `~/.codex/` (or your custom `$CODEX_HOME`).
